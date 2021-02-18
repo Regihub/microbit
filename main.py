@@ -89,11 +89,6 @@ def stredKompasu():
     led.plot_brightness(3, 2, 150)
     led.plot_brightness(2, 3, 150)
 
-def on_gesture_shake():
-    soundExpression.hello.play()
-    basic.show_number(randint(1, 6))
-input.on_gesture(Gesture.SHAKE, on_gesture_shake)
-
 def on_logo_touched():
     basic.clear_screen()
 input.on_logo_event(TouchButtonEvent.TOUCHED, on_logo_touched)
